@@ -22,12 +22,6 @@ Pendekatan ini membangun solusi dari masalah terkecil ($i=1$) hingga terbesar ($
 - Nilai `val[i]` dihitung menggunakan nilai-nilai sebelumnya yang sudah diketahui.
 - **File**: `rod_cutting_bottom_up.py`
 
-### 4. Unbounded Knapsack Approach
-Masalah Rod Cutting dapat dipandang sebagai variasi dari Unbounded Knapsack Problem, di mana panjang potongan adalah "berat" dan harga adalah "nilai".
-- Kita memiliki kapasitas knapsack sebesar $n$.
-- Kita dapat mengambil item (potongan) dengan panjang tertentu berulang kali (unbounded).
-- Iterasi dilakukan berdasarkan item (panjang potongan) untuk memperbarui tabel DP.
-- **File**: `rod_cutting_knapsack.py`
 
 ## Analisis Algoritma
 
@@ -43,9 +37,6 @@ Masalah Rod Cutting dapat dipandang sebagai variasi dari Unbounded Knapsack Prob
 - **Kompleksitas Waktu**: $O(n^2)$. Terdapat dua loop bersarang. Loop luar berjalan $n$ kali, dan loop dalam rata-rata $n/2$ kali.
 - **Kompleksitas Ruang**: $O(n)$ untuk array tabel DP.
 
-### 4. Unbounded Knapsack
-- **Kompleksitas Waktu**: $O(n^2)$. Mirip dengan Bottom Up, kita mengiterasi setiap item (panjang) dan memperbarui array kapasitas.
-- **Kompleksitas Ruang**: $O(n)$ untuk array tabel DP.
 
 ## Aplikasi/Implementasi
 Implementasi algoritma tersedia dalam empat file Python yang berbeda sesuai pendekatan di atas.
